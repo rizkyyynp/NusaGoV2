@@ -7,7 +7,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import NusaIcon from "../../assets/images/nusago.png";
 import ToggleSwitch from "../Toggle/ToggleSwitch";
-import useAuth from "@/utils/useAuth";
+import useAuth from "@/hooks/useAuth";
 import Cookies from "js-cookie";
 import { useSelector, useDispatch } from 'react-redux';
 import { disableDarkMode } from "@/redux/slices/darkModeSlice";

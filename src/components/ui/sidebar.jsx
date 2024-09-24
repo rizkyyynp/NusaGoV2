@@ -7,7 +7,7 @@ import Image from "next/image";
 import NusaIcon from "../../assets/images/nusago.png";
 import { useSelector, useDispatch } from 'react-redux';
 import { disableDarkMode } from "@/redux/slices/darkModeSlice";
-import useAuth from "@/utils/useAuth";
+import useAuth from "@/hooks/useAuth";
 import Cookies from "js-cookie";
 import defaultProfile from "../../assets/images/profile.png";
 import { MdCloseFullscreen, MdLogin, MdLogout, MdMenu } from "react-icons/md";
@@ -255,7 +255,7 @@ export const SidebarProfile = ({
         width={50}
         height={50}
         alt="Avatar"
-    /> : <FaRegUserCircle  className="text-primary h-7 w-7 flex-shrink-0 dark:text-secondary" />;
+    /> : <FaRegUserCircle className="text-primary h-7 w-7 flex-shrink-0 dark:text-secondary" />;
 
     if (isLoggedIn) {
         return (

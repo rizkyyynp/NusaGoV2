@@ -48,13 +48,13 @@ export default function CardActivity({ initialItems }) {
                                     <div className='overflow-hidden' style={{ width: '100%', height: '200px' }}>
                                         {isValidImageUrl(item.imageUrls[0]) ? (
                                             <Image
-                                                src={item.imageUrls[0]}
-                                                alt={item.title}
-                                                fill={true}
-                                                className="transition-transform duration-300 hover:scale-110 object-cover object-center"
-                                                style={{ objectFit: 'cover' }}
-                                                quality={100}
-                                                priority={true}
+                                                    src={item.imageUrls[0]}
+                                                    alt={item.title}
+                                                    fill={true}
+                                                    className="transition-transform duration-300 hover:scale-110"
+                                                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                                    quality={100}
+                                                    priority={true}
                                             />
                                         ) : (
                                             <div className="w-full h-full bg-gray-300 flex items-center justify-center">
